@@ -1,0 +1,64 @@
+ul {
+	color: #222;
+	font: normal 1.3em sans-serif;
+	list-style-type: none;
+	margin: 0 auto;
+	padding: 0;
+	width: 70%;
+}
+li {
+	border: 1px solid;
+	margin: 12px 0;
+	padding: .6em;
+}
+
+/* Structural Pseudo-classes - :first-child, last-child and nth-child */
+
+/*li:first-child {  
+	color: white;
+	background-color: black;
+}*/
+
+/*li:last-child {
+	color: white;
+	background-color: black;
+}*/
+
+/*li:nth-child(even) { 
+// unutma ki liste 1'den itibaren sayılır
+	color: white;
+	background-color: black;
+}*/
+
+/*li:nth-child(odd) { 
+	color: white;
+	background-color: black;
+}*/
+
+/*li:nth-child(3) {
+	color: white;
+	background-color: black;
+}*/
+
+/*li:nth-child(2n+3) { 
+// an+b -> b is offset value which selects the starting element
+// whereas a is the cycle
+	color: white;
+	background-color: black;
+}*/
+
+/*li:nth-child(3n+4) {
+	color: white;
+	background-color: black;
+}*/
+
+/*li:nth-child(-n+3) { // just to select first 3 list elements
+	color: white;
+	background-color: black;
+}*/
+
+
+li:nth-last-child(-n+3) { /*to select 3 list elements from the end*/
+	color: white;
+	background-color: black;
+}

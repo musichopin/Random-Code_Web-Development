@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>My Page</title>
+</head>
+
+<body>
+  <!-- table'ı css'de style etmek tercih edilmelidir -->
+  <table border="1" cellpadding="3" cellspacing="3">
+  <!-- it's necessary to create a border to define a table
+	border: outer border-->
+    <thead> 
+	<!-- thead created for ease of selection in css, 
+	search engines and screen readers -->
+      <tr> <!-- table row -->
+        <th>These Are<br>My Favorite Fruits</th> 
+		<!-- table header is customized and creates cell within a row -->
+        <th valign="middle">Vegetables</th> <!-- vertical align -->
+      </tr>
+    </thead>
+    <tfoot> <!-- written right after thead -->
+      <tr>
+        <td colspan="2" align="center">Thanks for reading!</td>
+		<!-- tfoot spread across two cells and centered -->
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr>
+        <td>Oranges</td>
+		<!-- table data creates cell -->
+        <td>Carrots</td>
+      </tr>
+      <tr>
+        <td>Apples</td>
+        <td>Broccoli</td>
+      </tr>
+      <tr>
+        <td>Strawberries</td>
+        <td>Asparagus</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>Potatoes</td>
+      </tr>
+    </tbody>
+  </table>
+  
+</body>
+</html>

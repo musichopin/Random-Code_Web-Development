@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+    border: 3px solid blue;
+	background-color:yellow; <!--bir kısma etkidi-->
+}
+
+
+nav {
+    float: left;
+    width: 200px;
+    border: 3px solid green; 
+}
+
+#nav2 {
+	
+    clear:left;
+}
+
+#section1 {
+    overflow: hidden; <!-- margin-left:206px'de denebilirdi -->
+    border: 3px solid red;
+}
+
+#section2 {
+    float: left;
+	width:500px; <!-- section inline element olduğu için width ayarlamak gerekti -->
+    background-color:red; <!--etkimedi-->
+}
+</style>
+</head>
+<body>
+
+	<div>
+
+		<nav>
+			<span>nav</span>
+			<ul>
+				<li><a target="_blank" href="/default.asp">Home</a></li>
+				<li><a target="_blank" href="default.asp">CSS</a></li>
+				<li><a target="_blank" href="/html/default.asp">HTML</a></li>
+				<li><a target="_blank" href="/js/default.asp">JavaScript</a></li>
+				<li><a target="_blank" href="/default.asp">Home</a></li>
+				<li><a target="_blank" href="default.asp">CSS</a></li>
+				<li><a target="_blank" href="/js/default.asp">JavaScript</a></li>
+				<li><a target="_blank" href="/default.asp">Home</a></li>
+				<li><a target="_blank" href="default.asp">CSS</a></li>	
+			</ul>
+		</nav>
+
+		<section id="section1">
+			<span>section</span>
+			<p>
+				Notice we have put a clearfix on the div container. It is not needed in this example, 
+				but it would be if the nav element was longer than the non-floated section content.
+				Notice we have put a clearfix on the div container. It is not needed in this example, 
+				but it would be if the nav element was longer than the non-floated section content.
+				Notice we have put a clearfix on the div container. It is not needed in this example, 
+				but it would be if the nav element was longer than the non-floated section content. 
+				Notice we have put a clearfix on the div container. It is not needed in this example, 
+				but it would be if the nav element was longer than the non-floated section content.
+				Notice we have put a clearfix on the div container. It is not needed in this example, 
+				but it would be if the nav element was longer than the non-floated section content.
+			</p>
+		  
+			<span>section</span>
+			<p>
+				Notice we have put a clearfix on the div container. It is not needed in this example, 
+				but it would be if the nav element was longer than the non-floated section content.
+				Notice we have put a clearfix on the div container. It is not needed in this example, 
+				but it would be if the nav element was longer than the non-floated section content.
+				Notice we have put a clearfix on the div container. It is not needed in this example, 
+				but it would be if the nav element was longer than the non-floated section content.
+				Notice we have put a clearfix on the div container. It is not needed in this example, 
+				but it would be if the nav element was longer than the non-floated section content.
+			</p>	
+		</section>
+	  
+	  
+		<nav id="nav2">
+			<span>nav</span>
+			<ul>
+			  <li><a target="_blank" href="/default.asp">Home</a></li>
+			  <li><a target="_blank" href="default.asp">CSS</a></li>
+			  <li><a target="_blank" href="/html/default.asp">HTML</a></li>
+			  <li><a target="_blank" href="/js/default.asp">JavaScript</a></li>
+			  <li><a target="_blank" href="/default.asp">Home</a></li>
+			  <li><a target="_blank" href="default.asp">CSS</a></li>
+			  <li><a target="_blank" href="/js/default.asp">JavaScript</a></li>
+			  <li><a target="_blank" href="/default.asp">Home</a></li>
+			  <li><a target="_blank" href="default.asp">CSS</a></li>
+			</ul>
+		</nav>
+	  
+		<section id="section2">
+			<span>section</span>
+			<p>
+				Notice we have put a clearfix on the div container. It is not needed in this example, 
+				but it would be if the nav element was longer than the non-floated section content.  
+				div container. It is not needed in this example. 
+				Notice we have put a clearfix on the div container. It is not needed in this example, 
+				but it would be if the nav element was longer than the non-floated section content.
+				Notice we have put a clearfix on the div container. It is not needed in this example, 
+				but it would be if the nav element was longer than the no
+			</p>
+		  
+			<span>section</span>
+			<p>
+				Notice we have put a clearfix on the div container. It is not needed in this example, 
+				but it would be if the nav element was longer than the non-floated section content.
+				v element was longer than the non-floated section content. 
+				Notice we have put a clearfix on the div container. It is not needed in this example, 
+				but it would be if the nav element was longer than the non-floated section content.
+				Notice we have put a clearfix on the div container. It is not needed in this example, 
+				but it would be if the nav element was longer than the non-floated section content.
+				on content. Notice we have put a clearfix on the div container. 
+				It is not needed in this example. but it would be if the nav element was longer than 
+				the non-floated section content.
+				fix on the div container. 
+				It is not needed in this example. but it would be if the nav element was longer than 
+				the non-floated section content. tfix on the div container. 
+				It is not needed in this example. but it would be if the nav element was longer than 
+				the non-floated section content.
+			</p>	
+		</section>
+
+	</div>
+
+</body>
+</html>
