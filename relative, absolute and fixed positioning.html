@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <title>Positioning</title>
+  <style type="text/css">
+	
+	body, div, p, h1{
+	margin:0;
+	padding:0;
+	}
+	
+	h1 {
+	position:fixed;
+	}
+	
+	#wrap {
+	width: 1200px;
+	height:400px;
+	margin: 0 auto; <!-- top property yerine burada 500px belirtilebilirdi  -->
+	border: 2px solid green;
+	background-color:orange;
+	position: relative; 
+	top: 500px; 
+	<!-- absolute position olsaydı marginin önemi kalmazdı -->
+	<!-- h1'in pozisyonu fixed olduğu için  onun yerini alır ve
+	window a göre top dan iter -->
+	}
+	
+	.susy {
+		text-align: center;	
+		border: 2px solid red;
+		<!-- position belirtilmediğinden relative olarak düşünülür -->
+	}
+	
+	.victor {
+		width: 500px;
+		border: 2px solid blue;
+		position: relative; 
+		top: 30px; 
+		left: 350px;
+		<!-- position kendisine göre belirlendi
+		#wrap'in pozisyonunun türünden veya belirtilip belirtilmediğinden bağımsız 
+		.susy absolute olsaydı onun yerini alacaktı-->		
+	}
+	
+	.kate {
+		width: 500px;
+		border: 2px solid pink;
+		position: absolute; 
+		bottom: 0px; 
+		left: 0px;
+		<!-- position #wrap e göre belirlendi, zira #wrap'in pozisyonu belirtilmiş (absolute veya relative önemli değil) -->	
+		<!-- #wrap'in pozisyonu belirtilmeseydi browser window a/body e göre pozisyonlayacaktı -->	
+	}
+  </style>
+</head>
+<body>
+	<h1>Positioning</h1>
+	<div id="wrap">
+		<p class="susy"> asdfasdfadfa asdfasdfadsf sdfsadfasdfasdfasdfas asdasd asdf asdf asf </p>
+		<p class="victor"> asdfasdfadfa asdfasdfadsf sdfsadfasdfasdfasdfas asdasd asdf asdf asf </p>
+		<p class="kate"> asdfasdfadfa asdfasdfadsf sdfsadfasdfasdfasdfas asdasd asdf asdf asf </p>
+	</div>
+</body>
+</html>
